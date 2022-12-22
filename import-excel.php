@@ -36,7 +36,7 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
         $address = $data[$i][3];
 
         // Insert the data into the MySQL database
-        $sql = "INSERT INTO customers (customer namme, customer email, customer phone, customer address) VALUES ('$name', '$email', '$phone', '$address')";
+        $sql = "INSERT INTO customers (customer name, customer email, customer phone, customer address) VALUES ('$name', '$email', '$phone', '$address')";
         mysqli_query($conn, $sql);
       }
     }
